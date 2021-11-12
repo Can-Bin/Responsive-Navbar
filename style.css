@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-top{
+    padding: 1rem;
+    box-shadow: 0px 2px 10px grey;
+}
+
+.header
+{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bar{
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: transparent;
+    transition: all .4s ;
+    color: grey;
+    cursor: pointer;
+}
+
+.bar:active{
+    transform: rotate(270deg);
+
+}
+
+.bar-rotate{
+    transform: rotate(270deg);
+}
+
+.mid-side{
+    height: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.right-side{
+    display: none;
+}
+
+
+ul{
+list-style-type: none;
+}
+
+li{
+    font-size: 1.2rem;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(80, 78, 78);
+    opacity: 0.7;
+}
+
+a:hover{
+    opacity: 1;
+}
+
+.fab,
+.fas{
+    color: rgb(109, 138, 223);
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+span{
+    color: rgb(82, 113, 207);
+}
+
+.show-links{
+    height: 25rem;
+    display: block;
+    width: 100%;
+    
+    /* color: white; */
+}
+
+.show-links li{
+    background-color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    transition: all .5s ease-in-out;
+    margin-top: 1rem;
+}
+
+.show-links li:hover{
+    background-color:skyblue;
+}
+
+.show-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 1rem; */
+}
+
+.show-icons a{
+    padding: 0rem 1rem;
+    transition: all .3s ease-in-out;
+}
+
+.show-icons a:hover{
+    font-size: x-large;
+}
+
+
+
+
+@media screen and (min-width: 760px){
+    .nav-top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    .header{
+        /* border: 1px solid; */
+        display: flex;
+    }
+
+
+    .bar{
+        display: none;
+    }
+
+    .mid-side{
+        display: flex;
+        height: auto;
+        /* border: 1px solid; */
+        align-items: center;
+        justify-content: center;   
+            
+    }
+
+    .mid-side a{
+        font-size: 1.3rem; 
+    }
+
+    li{
+        padding: 0.8rem;
+    }
+
+    a{
+        opacity: 0.7;
+    }
+    a:hover{
+        opacity: 1;
+    }
+
+    .right-side{
+        display: flex;
+        /* border: 1px solid; */
+    }
+}
